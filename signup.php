@@ -82,8 +82,8 @@ if(isset($_POST['submit']))
 		$_SESSION['std']=$std;
 		$_SESSION['board']=$board;
 		// Authorisation details.
-	$username = "abhishek2018agrawal@gmail.com";
-	$hash = "9dfc345bc7982b2890aa355b0afad840dccd0e0171e388c3fcadc4ce18a3e809";
+	$username = "";
+	$hash = "";
 
 	// Config variables. Consult http://api.textlocal.in/docs for more info.
 	$test = "0";
