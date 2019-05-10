@@ -1,0 +1,51 @@
+<?php
+
+?>
+
+<form method="post" action="check.php">
+<?php
+$question=$_GET['name'];
+$answer=$question."a";
+echo $answer;
+$con=mysqli_connect("localhost","root","","quizdatabase");
+$i=1;
+for($i = 1; $i <= 2; $i+=1)
+{
+
+$que_sel="select * from $question where que_id = $i";
+$que_run=mysqli_query($con , $que_sel);
+while($que = mysqli_fetch_assoc($que_run))
+{
+
+	?>
+
+	<tr>
+	<td>
+	<p> <?php echo $que['que_id'] ,": ", $que['question']; ?>	</p>
+	</td>
+
+	<?php
+	$que_ans="select * from answer where ans_id = $i";
+	$ans_run=mysqli_query($con , $que_ans);
+	while($ans=mysqli_fetch_array($ans_run))
+	{?>
+
+	 <input type="radio" name="quizcheck['<?php echo $ans['ans_id']; ?>']" value="<?php echo $ans['aid']; ?>" >
+	<?php echo $ans['answer']; } ?>
+	</tr>
+
+<?php
+
+
+
+
+
+}
+}
+?>
+<input type="submit" name="check" value="getresult">
+
+</form>
+<?php
+
+?>
