@@ -1,6 +1,6 @@
 <?php
 
-$con=mysqli_connect("localhost","root","","abhishek");
+$con=mysqli_connect("localhost","root","","yourdatabasename");
 if($con==true)
 
 {
