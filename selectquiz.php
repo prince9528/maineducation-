@@ -67,7 +67,7 @@ include("dbcon.php");
   <td>
     <div id="quiz">
     <select>
-      <option>select</option>
+      <option>select your quiz no</option>
     </select>
   </div>
   </td>
