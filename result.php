@@ -23,7 +23,7 @@ if(!empty($_POST['quizcheck']))
 	 $count=count($_POST['quizcheck']);
 ?>
 <h1 class="login">Result</h1>
-
+<p> for each wrong answer you have get_class -1 marks and for each correct answer you have get 4 marks</p>
 <p class="scorep" ><?php echo "total no of question attemp by you is = ".$count;?></p>
 <?php
 
@@ -58,7 +58,7 @@ $result=0;
 /*}*/
 ?>
 
-<p class="resultp"><?php echo "your score in this exercise  = ".$result; ?> </p>
+<p class="resultp"><?php echo "your total marks in this test is   = ".$result; ?> </p>
 <?php
 }
 
