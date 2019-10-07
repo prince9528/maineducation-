@@ -149,8 +149,8 @@ if(!isset($_SESSION['mobileno']))
         echo "";
     	echo "$errorp"; }?> </p></label>
 
-        <input type="password" name="psw1" placeholder="password"  />
-        <input type="password" name="psw2" placeholder="confirm password"  />
+        <input type="password" name="psw1" placeholder="password ( Min 8 Char)"  />
+        <input type="password" name="psw2" placeholder="confirm password ( Same As Password)"  />
 
 
         <label><b>Class</b></label><br>
