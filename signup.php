@@ -133,7 +133,7 @@ if(!isset($_SESSION['mobileno']))
       <p style="color:red" > <?php
     	if(isset($errorm)){
     	echo "$errorm"; }?> </p>
-       <input type="text"  name="mobileno"  placeholder="enter mobile no" value="<?php if(isset($_POST["submit"]) || isset($_POST["sendotp"]) || isset($_POST['verifyotp']) ){ echo "$mob"; }?>" >
+       <input type="text"  name="mobileno"  placeholder="enter your mobile no" value="<?php if(isset($_POST["submit"]) || isset($_POST["sendotp"]) || isset($_POST['verifyotp']) ){ echo "$mob"; }?>" >
 
 
 
