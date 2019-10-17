@@ -10,7 +10,7 @@ if(!isset($_SESSION['mobileno']))
 <div class="login">
     <h1>Login</h1>
     <form method="post">
-        <input type="text" name="mobileno" placeholder="Personal Mobile No." required="required" />
+        <input type="text" name="mobileno" placeholder="Mobile No." required="required" />
         <input type="password" name="password" placeholder="Password" required="required" />
         <button type="submit"  name="submit" value="submit" class="btn btn-primary btn-block btn-large">Sign In.</button>
         <a class="sign" href="signup.php" >Sign up</a>
